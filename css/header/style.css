@@ -1,0 +1,8 @@
+@import url('navigation/style.css');
+
+.header {
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}

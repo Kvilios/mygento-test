@@ -1,0 +1,28 @@
+.banner {
+    background: url('../../i/banner/background-image.jpg') no-repeat 0 center / cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    padding: 96px 0 48px;
+}
+
+.banner-scroll {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-scroll-label {
+    color: white;
+    font-size: 18px;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+}
+
+.banner-scroll-arrow {
+    background: url('../../i/arrow.png') no-repeat 0 center / 200%;
+    height: 32px;
+    width: 32px;
+}

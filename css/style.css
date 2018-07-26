@@ -1,0 +1,18 @@
+@import url('header/style.css');
+@import url('banner/style.css');
+@import url('about/style.css');
+
+body {
+    color: #202020;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.layout {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1792px; /*1920px - 128px*/
+    min-width: 320px;
+    padding: 0 64px;
+}
