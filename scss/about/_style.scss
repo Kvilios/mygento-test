@@ -1,0 +1,28 @@
+.about {
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    padding: 96px 0 48px;
+
+    &-scroll {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        &-label {
+            color: #bebebe;
+            font-size: 18px;
+            margin: 0 0 16px;
+            text-transform: uppercase;
+        }
+
+        &-arrow {
+            background: url('../i/arrow.png') no-repeat 100% center / 200%;
+            height: 32px;
+            width: 32px;
+        }
+    }
+}

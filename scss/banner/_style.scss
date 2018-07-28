@@ -1,5 +1,5 @@
 .banner {
-    background: url('../../i/banner/background-image.jpg') no-repeat 0 center / cover;
+    background: url('../i/banner/background-image.jpg') no-repeat 0 center / cover;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
 }
 
 .banner-scroll-arrow {
-    background: url('../../i/arrow.png') no-repeat 0 center / 200%;
+    background: url('../i/arrow.png') no-repeat 0 center / 200%;
     height: 32px;
     width: 32px;
 }
