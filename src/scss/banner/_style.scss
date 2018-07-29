@@ -1,0 +1,40 @@
+.banner {
+    background: url('/img/banner/background-image.jpg') no-repeat 0 center / cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    padding: 96px 0 48px;
+    position: relative;
+
+    @media (max-width: 320px) {
+        background-size: 1920px;
+        min-height: 268px;
+    }
+
+    &-scroll {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        &-label {
+            color: white;
+            font-size: 18px;
+            margin: 0 0 16px;
+            text-transform: uppercase;
+        }
+
+        &-arrow {
+            animation: arrow-animation 1s ease-in-out infinite;
+            background: url('/img/arrow.png') no-repeat 0 center / 200%;
+            height: 32px;
+            position: relative;
+            width: 32px;
+        }
+    }
+}

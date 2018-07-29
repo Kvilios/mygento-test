@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #202020;
     font-family: 'Open Sans', sans-serif;
@@ -11,6 +15,24 @@ body {
     max-width: 1792px; /*1920px - 128px*/
     min-width: 320px;
     padding: 0 64px;
+
+    @media (max-width: 450px) {
+        padding: 0;
+    }
+}
+
+@keyframes arrow-animation {
+    0%, 100% {
+        opacity: .1;
+        transform: scale(.9);
+        top: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+        top: 16px;
+    }
 }
 
 @import 'header/style';

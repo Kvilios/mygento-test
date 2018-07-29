@@ -1,0 +1,94 @@
+.navigation {
+    @media (max-width: 450px) {
+        padding: 0 32px;
+    }
+
+    &.dark &-list {
+        border-bottom-color: #f1f1f1;
+
+        @media (max-width: 768px) {
+            border: none;
+        }
+
+        &-item {
+            color: #f1f1f1;
+
+            &-link {
+                &::before {
+                    background-color: #f1f1f1;
+                }
+            }
+        }
+    }
+
+    &.dark &-button {
+        color: #f1f1f1;
+    }
+
+    &-button {
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        color: white;
+        display: none;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 24px;
+        padding: 32px 16px 0;
+        text-transform: uppercase;
+
+        span {
+            font-family: 'Tahoma', sans-serif;
+            margin-right: 4px;
+            position: relative;
+            top: -2px;
+        }
+
+        @media (max-width: 640px) {
+            display: flex;
+        }
+    }
+
+    &-list {
+        border-bottom: 1px solid white;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        margin: 0;
+        padding: 0 0 32px;
+
+        @media (max-width: 640px) {
+            display: none;
+        }
+
+        &-item {
+            color: white;
+            font-family: 'PT Sans', sans-serif;
+            padding: 32px 16px 0;
+            text-transform: uppercase;
+
+            &-link {
+                color: inherit;
+                position: relative;
+                text-transform: inherit;
+                text-decoration: inherit;
+
+                &:hover::before {
+                    opacity: 1;
+                }
+
+                &::before {
+                    background-color: white;
+                    bottom: 0;
+                    content: '';
+                    display: block;
+                    height: 1px;
+                    opacity: 0;
+                    position: absolute;
+                    transition: opacity .2s ease-in-out;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
